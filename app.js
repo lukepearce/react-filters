@@ -21,10 +21,10 @@ var routes = require('./config/routes');
 
 // Uses the # in url
 Router.run(routes, function(Root){
-    React.render(<Root />, document.getElementById('app'));
+  React.render(<Root />, document.getElementById('app'));
 });
 
-// Uses pushState
-// Router.run(routes, Router.HistoryLocation, function (Handler) {
-//   React.render(<Handler/>, document.body);
+//Uses pushState
+// Router.run( routes, Router.HistoryLocation, function ( Handler ) {
+//   React.render( <Handler/>, document.getElementById('app') );
 // });

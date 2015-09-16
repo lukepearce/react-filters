@@ -1,0 +1,19 @@
+body {
+	font-size: 16px;
+	font-family: $font-primary;
+	line-height: 1.5;
+	color: grey;
+	background-color: $colour-background;
+}
+
+.container {
+	max-width: $container-max-width;
+	padding-left: $container-side-padding;
+	padding-right: $container-side-padding;
+	margin: 0 auto;
+}
+
+.wrap {
+	padding-top: $unit * 2;
+	padding-bottom: $unit * 2;
+}

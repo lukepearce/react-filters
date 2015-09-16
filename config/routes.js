@@ -1,14 +1,14 @@
 var React = require('react');
-var Main = require('../components/Main');
-var Home = require('../components/Home/Home');
-var Testing = require('../components/Testing');
+var Main = require('../components/main');
+var Home = require('../components/home/Home');
+var TileWrapper = require('../components/tile-search/TileWrapper');
 var Router = require('react-router');
 var DefaultRoute = Router.DefaultRoute;
 var Route = Router.Route;
 
 module.exports = (
   <Route name="app" path="/" handler={Main}>
-    <Route name="testing" path="testing" handler={Testing} />
+    <Route name="tile-search" path="tile-search" handler={TileWrapper} />
     <DefaultRoute handler={Home} />
   </Route>
 );
